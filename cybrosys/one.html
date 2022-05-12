@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script src=""></script>
+
+    <meta charset="UTF-8">
+    <title>sign up</title>
+</head>
+
+<body style="background-color: rgba(8, 131, 247, 0.356);">
+
+    <style>
+        .ui-widget-content {
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+        }
+        
+        .error {
+            display: block;
+            color: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        input {
+            padding: 2px 20px;
+            margin: 0px 0;
+            box-sizing: border-box;
+            color: black;
+        }
+    </style>
+
+    <div class="d-flex justify-content-center">
+        <h2>Sign Up...</h2>
+    </div>
+    <div class="container-fluid d-flex justify-content-center">
+        <form id="form" action="https://www.cybrosys.com/">
+            <b>username: <br><input type="text" name="name" id="name"></b><br><br>
+            <b>email: <br><input type="email" name="email"></b><br><br>
+            <b>Address: <br><textarea name="address" cols="22" rows="3"></textarea></b><br><br>
+            <b>Dob: <br><input type="text" id="nu_datebirth" name="nu_datebirth"></b><br><br>
+            <b>Age: <br><input type="text" name="a_ge" id="a_ge" class="nu_field" readonly/></b><br><br>
+            <b>Gender <br>Male:<input type="radio" name="gender">female<input type="radio" name="gender"></b><br><br>
+            <b>Password:<br> <input type="password" name="pass" id="psw"><span toggle="#password-field" class="toggle-password"><img src="eye.png" height="30px" width="30px" alt=""></span></b><br><br>
+            <b>confirm password: <br><input type="text" name="pass1" id="psw1"></b><br><br>
+            <input type="submit"> <input type="reset">
+        </form>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script>
+    $(function() {
+        $("#nu_datebirth").datepicker({
+            onSelect: function(value, ui) {
+                var today = new Date(),
+                    age = today.getFullYear() - ui.selectedYear;
+                $('#a_ge').val(age);
+            },
+
+            dateFormat: 'dd-mm-yy',
+            changeMonth: true,
+            changeYear: true,
+            yearRange: "c-100:c+0",
+            maxDate: new Date()
+        });
+
+    });
+</script>
+<script>
+    $("body").on('click', '.toggle-password', function() {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+
+        var input = $("#psw");
+
+        if (input.attr("type") === "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+    $.validator.addMethod('pass', function(value, element) {
+            return this.optional(element) || (value.match(/[a-z]/) && value.match(/[0-9]/) && value.match(/[A-Z]/) && value.match(/[! @ # $ % ^ & *]/));
+        },
+        'Password Must contain at <br> least one number and one<br>  uppercase <br> and lowercase letter and special <br> characters and at least 8 or <br>more characters');
+
+    $.validator.addMethod('inp', function(value, element) {
+            return this.optional(element) || /^[A-Z ]+$/i.test(value);
+        },
+        'this characters not allowed');
+    $.validator.addMethod('em', function(value, element) {
+            return this.optional(element) || /^[A-Z a-z .]+$/i.test(value);
+        },
+        'this characters not allowed');
+
+    $(document).ready(function() {
+        $("#form").validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 3,
+                    inp: true
+
+
+                },
+                email: {
+                    required: true
+                },
+                pass: {
+                    required: true,
+                    pass: true,
+                    minlength: 8
+                },
+                pass1: {
+                    required: true,
+                    equalTo: '#psw',
+                    minlength: 8
+                }
+
+            }
+        })
+    })
+</script>
+
+</html>
