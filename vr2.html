@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="btn.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>vote new</title>
+</head>
+
+<body>
+    <div id="advcand" class="bg-success bg-opacity-75 text-light">
+        <h3>Add Candidates</h3>
+        <b>Name</b><input class="addinp" id="candname" type="text">
+        <a id="add"><button class="button-33">Add</button></a>
+    </div>
+
+    <div class="bg-success bg-opacity-75 text-light">
+        <div id="tdiv">
+            <table>
+                <tr>
+                    <th style="padding-top: 10px ; padding-right: 10px;">Name</th>
+
+                    <th style="padding-top: 10px ;">Actions</th>
+                </tr>
+                <tr id="tr1">
+                    <td><input class="vinp" id="evcand1" size="8" type="text" placeholder="enter new name"><input class="vinp" readonly id="cand1" size="8" type="text"> </td>
+                    <td>
+                        <input class="button-3" id="edit1" type="submit" value="Edit">
+                        <input class="button-4" id="update1" type="submit" value="Update">
+                    </td>
+                    <td><input class="button-24 " id="delcand1" type="submit" value="delete"> </td>
+                </tr>
+                <tr id="tr2">
+                    <td><input id="evcand2" size="8" class="vinp" type="text" placeholder="enter new name"><input class="vinp" readonly id="cand2" size="8" type="text"> </td>
+                    <td><input class="button-3" id="edit2" type="submit" value="Edit">
+                        <input class="button-4" id="update2" type="submit" value="Update"></td>
+                    <td><input class="button-24 " id="delcand2" type="submit" value="delete"> </td>
+                </tr>
+                <tr id="tr3">
+                    <td><input id="evcand3" size="8" class="vinp" type="text" placeholder="enter new name"><input class="vinp" readonly id="cand3" size="8" type="text"> </td>
+                    <td><input class="button-3" id="edit3" type="submit" value="Edit">
+                        <input class="button-4" id="update3" type="submit" value="Update"></td>
+                    <td><input class="button-24 " id="delcand3" type="submit" value="delete"> </td>
+                </tr>
+                <tr id="tr4">
+                    <td><input id="evcand4" size="8" class="vinp" type="text" placeholder="enter new name"><input class="vinp" readonly id="cand4" size="8" type="text"> </td>
+                    <td><input class="button-3" id="edit4" type="submit" value="Edit">
+                        <input class="button-4" id="update4" type="submit" value="Update"> </td>
+                    <td><input class="button-24 " id="delcand4" type="submit" value="delete"> </td>
+                </tr>
+                <tr id="tr5">
+                    <td><input id="evcand5" size="8" class="vinp" type="text" placeholder="enter new name"><input class="vinp" readonly id="cand5" size="8" type="text"> </td>
+                    <td><input class="button-3" id="edit5" type="submit" value="Edit">
+                        <input class="button-4" id="update5" type="submit" value="Update"> </td>
+                    <td><input class="button-24 " id="delcand5" type="submit" value="delete"> </td>
+                </tr>
+                <tr id="tr6">
+                    <td><input id="evcand6" size="8" class="vinp" type="text" placeholder="enter new name"><input class="vinp" readonly id="cand6" size="8" type="text"> </td>
+                    <td><input class="button-3" id="edit6" type="submit" value="Edit">
+                        <input class="button-4" id="update6" type="submit" value="Update"> </td>
+                    <td><input class="button-24 " id="delcand6" type="submit" value="delete"> </td>
+                </tr>
+                <tr id="tr7">
+                    <td><input id="evcand7" size="8" class="vinp" type="text" placeholder="enter new name"><input class="vinp" readonly id="cand7" size="8" type="text"> </td>
+                    <td><input class="button-3" id="edit7" type="submit" value="Edit">
+                        <input class="button-4" id="update7" type="submit" value="Update"> </td>
+                    <td><input class="button-24 " id="delcand7" type="submit" value="delete"> </td>
+                </tr>
+                <tr id="tr8">
+                    <td><input id="evcand8" size="8" class="vinp" type="text" placeholder="enter new name"><input class="vinp" readonly id="cand8" size="8" type="text"> </td>
+                    <td><input class="button-3" id="edit8" type="submit" value="Edit">
+                        <input class="button-4" id="update8" type="submit" value="Update"> </td>
+                    <td><input class="button-24 " id="delcand8" type="submit" value="delete"> </td>
+                </tr>
+                <tr id="tr9">
+                    <td><input id="evcand9" size="8" class="vinp" type="text" placeholder="enter new name"><input class="vinp" readonly id="cand9" size="8" type="text"> </td>
+                    <td><input class="button-3" id="edit9" type="submit" value="Edit">
+                        <input class="button-4" id="update9" type="submit" value="Update"> </td>
+                    <td><input class="button-24 " id="delcand9" type="submit" value="delete"> </td>
+                </tr>
+                <tr id="tr10">
+                    <td><input id="evcand10" size="8" class="vinp" type="text" placeholder="enter new name"><input class="vinp" readonly id="cand10" size="8" type="text"> </td>
+                    <td><input class="button-3" id="edit10" type="submit" value="Edit">
+                        <input class="button-4" id="update10" type="submit" value="Update"> </td>
+                    <td><input class="button-24 " id="delcand10" type="submit" value="delete"> </td>
+                </tr>
+            </table>
+            <button class="button-77" id="strtvote">Start Vote</button>
+        </div>
+
+        <div id="tvdiv">
+            <table>
+                <tr>
+                    <th style="padding-top: 10px ; padding-right: 10px;">Name</th>
+
+                    <th style="padding-top: 10px ;">Actions</th>
+                </tr>
+                <tr id="trv1">
+                    <td><input readonly id="vcand1" size="8" type="text"> </td>
+                    <td><input class="button-33" id="votecand1" type="submit" value="Vote"></td>
+                </tr>
+                <tr id="trv2">
+                    <td><input readonly id="vcand2" size="8" type="text"> </td>
+                    <td><input class="button-33" id="votecand2" type="submit" value="Vote"> </td>
+                </tr>
+                <tr id="trv3">
+                    <td><input readonly id="vcand3" size="8" type="text"> </td>
+                    <td><input class="button-33" id="votecand3" type="submit" value="Vote"> </td>
+                </tr>
+                <tr id="trv4">
+                    <td><input readonly id="vcand4" size="8" type="text"> </td>
+                    <td><input class="button-33" id="votecand4" type="submit" value="Vote"> </td>
+                </tr>
+                <tr id="trv5">
+                    <td><input readonly id="vcand5" size="8" type="text"> </td>
+                    <td><input class="button-33" id="votecand5" type="submit" value="Vote"> </td>
+                </tr>
+                <tr id="trv6">
+                    <td><input readonly id="vcand6" size="8" type="text"> </td>
+                    <td><input class="button-33" id="votecand6" type="submit" value="Vote"> </td>
+                </tr>
+                <tr id="trv7">
+                    <td><input readonly id="vcand7" size="8" type="text"> </td>
+                    <td><input class="button-33" id="votecand7" type="submit" value="Vote"> </td>
+                </tr>
+                <tr id="trv8">
+                    <td><input readonly id="vcand8" size="8" type="text"> </td>
+                    <td><input class="button-33" id="votecand8" type="submit" value="Vote"> </td>
+                </tr>
+                <tr id="trv9">
+                    <td><input readonly id="vcand9" size="8" type="text"> </td>
+                    <td><input class="button-33" id="votecand9" type="submit" value="Vote"> </td>
+                </tr>
+                <tr id="trv10">
+                    <td><input readonly id="vcand10" size="8" type="text"> </td>
+                    <td><input class="button-33" id="votecand10" type="submit" value="Vote"> </td>
+                </tr>
+            </table>
+            <Button class="button-77" id="vresult">View result</Button>
+        </div>
+    </div>
+    <div class="bg-success bg-opacity-75 text-light">
+        <div id="winner-div" class="bg-success bg-opacity-75 text-light text-md-center">
+            <h1>Winner is <label id="wnm"></label> vote is <label id="wvote"></label></h1>
+        </div>
+        <div>
+
+            <table id="vrtable">
+                <tr>
+                    <th>Name</th>
+                    <th>No.Vote</th>
+                </tr>
+                <tr id="resulttr1">
+                    <td> <b><label id="rnamecand1"></label></b></td>
+                    <td> <b><label id="rvotecand1"></label></b> </td>
+                </tr>
+                <tr id="resulttr2">
+                    <td> <b><label id="rnamecand2"></label></b> </td>
+                    <td> <b><label id="rvotecand2"></label></b> </td>
+                </tr>
+                <tr id="resulttr3">
+                    <td> <b><label id="rnamecand3"></label></b> </td>
+                    <td> <b><label id="rvotecand3"></label></b> </td>
+                </tr>
+                <tr id="resulttr4">
+                    <td> <b><label id="rnamecand4"></label></b> </td>
+                    <td> <b><label id="rvotecand4"></label></b> </td>
+                </tr>
+                <tr id="resulttr5">
+                    <td> <b><label id="rnamecand5"></label></b> </td>
+                    <td> <b><label id="rvotecand5"></label></b> </td>
+                </tr>
+                <tr id="resulttr6">
+                    <td> <b><label id="rnamecand6"></label></b> </td>
+                    <td> <b><label id="rvotecand6"></label></b> </td>
+                </tr>
+                <tr id="resulttr7">
+                    <td> <b><label id="rnamecand7"></label></b> </td>
+                    <td> <b><label id="rvotecand7"></label></b> </td>
+                </tr>
+                <tr id="resulttr8">
+                    <td> <b><label id="rnamecand8"></label></b> </td>
+                    <td> <b><label id="rvotecand8"></label></b> </td>
+                </tr>
+                <tr id="resulttr9">
+                    <td> <b><label id="rnamecand9"></label></b> </td>
+                    <td> <b><label id="rvotecand9"></label></b> </td>
+                </tr>
+                <tr id="resulttr10">
+                    <td> <b><label id="rnamecand10"></label></b> </td>
+                    <td> <b><label id="rvotecand10"></label></b> </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#vrtable').hide()
+            $('#vresult').hide()
+            $('#tdiv').hide()
+            $('#winner-div').hide()
+            $('#tvdiv').hide()
+            $('#evcand1').hide()
+            $('#evcand2').hide()
+            $('#evcand3').hide()
+            $('#evcand4').hide()
+            $('#evcand5').hide()
+            $('#evcand6').hide()
+            $('#evcand7').hide()
+            $('#evcand8').hide()
+            $('#evcand9').hide()
+            $('#evcand10').hide()
+            $('#tr1').hide()
+            $('#tr2').hide()
+            $('#tr3').hide()
+            $('#tr4').hide()
+            $('#tr5').hide()
+            $('#tr6').hide()
+            $('#tr7').hide()
+            $('#tr8').hide()
+            $('#tr9').hide()
+            $('#tr10').hide()
+            $('#trv1').hide()
+            $('#trv2').hide()
+            $('#trv3').hide()
+            $('#trv4').hide()
+            $('#trv5').hide()
+            $('#trv6').hide()
+            $('#trv7').hide()
+            $('#trv8').hide()
+            $('#trv9').hide()
+            $('#trv10').hide()
+            $('#update1').hide()
+            $('#update2').hide()
+            $('#update3').hide()
+            $('#update4').hide()
+            $('#update5').hide()
+            $('#update6').hide()
+            $('#update7').hide()
+            $('#update8').hide()
+            $('#update9').hide()
+            $('#update10').hide()
+            var count = 0
+            var vc = 0
+            var delcount = 0
+            var votecand1 = 0
+            var votecand2 = 0
+            var votecand3 = 0
+            var votecand4 = 0
+            var votecand5 = 0
+            var votecand6 = 0
+            var votecand7 = 0
+            var votecand8 = 0
+            var votecand9 = 0
+            var votecand10 = 0
+
+            $('#add').click(function() {
+                $('#strtvote').click(function() {
+                    $('#tdiv').hide()
+                    $('#tvdiv').show()
+                    $('#vresult').show()
+                    $('#advcand').hide()
+                })
+
+                count++
+                delcount++
+                console.log("count", count)
+
+                var candname = $('#candname').val()
+                $('#tdiv').show()
+                if (count == 1) {
+                    $('#tr1').show()
+                    $('#cand1').val(candname)
+                    $('#vcand1').val(candname)
+                    var len1 = $('#vcand1').val()
+                    if (len1.length > 0) {
+                        $('#trv1').show()
+                    }
+                    console.log("len", len1.length)
+                    $('#rnamecand1').text(candname)
+                    $('#edit1').click(function() {
+                        $('#edit1').hide()
+                        $('#update1').show()
+                        $('#cand1').hide()
+                        $('#evcand1').show()
+                        $('#update1').click(function() {
+                            $('#edit1').show()
+                            $('#update1').hide()
+                            var evcand1 = $('#evcand1').val()
+                            $('#vcand1').val(evcand1)
+                            $('#rnamecand1').text(evcand1)
+                        })
+                    })
+
+                } else if (count == 2) {
+                    $('#tr2').show()
+                    $('#cand2').val(candname)
+                    $('#vcand2').val(candname)
+                    var len2 = $('#vcand2').val()
+                    console.log("len2", len2.length)
+
+                    if (len2.length > 0) {
+                        $('#trv2').show()
+                    }
+                    $('#rnamecand2').text(candname)
+                    $('#edit2').click(function() {
+                        $('#edit2').hide()
+                        $('#update2').show()
+                        $('#cand2').hide()
+                        $('#evcand2').show()
+                        $('#update2').click(function() {
+                            $('#edit2').show()
+                            $('#update2').hide()
+                            var evcand2 = $('#evcand2').val()
+                            $('#vcand2').val(evcand2)
+                            $('#rnamecand2').text(evcand2)
+                        })
+                    })
+                } else if (count == 3) {
+                    $('#tr3').show()
+                    $('#cand3').val(candname)
+                    $('#vcand3').val(candname)
+                    var len3 = $('#vcand3').val()
+                    if (len3.length > 0) {
+                        $('#trv3').show()
+                    }
+                    $('#rnamecand3').text(candname)
+                    $('#edit3').click(function() {
+                        $('#edit3').hide()
+                        $('#update3').show()
+                        $('#cand3').hide()
+                        $('#evcand3').show()
+                        $('#update3').click(function() {
+                            $('#edit3').show()
+                            $('#update3').hide()
+                            var evcand3 = $('#evcand3').val()
+                            $('#vcand3').val(evcand3)
+                            $('#rnamecand3').text(evcand3)
+                        })
+                    })
+                } else if (count == 4) {
+                    $('#tr4').show()
+                    $('#cand4').val(candname)
+                    $('#vcand4').val(candname)
+                    var len4 = $('#vcand4').val()
+                    if (len4.length > 0) {
+                        $('#trv4').show()
+                    }
+                    $('#rnamecand4').text(candname)
+                    $('#edit4').click(function() {
+                        $('#edit4').hide()
+                        $('#update4').show()
+                        $('#cand4').hide()
+                        $('#evcand4').show()
+                        $('#update4').click(function() {
+                            $('#edit4').show()
+                            $('#update4').hide()
+                            var evcand4 = $('#evcand4').val()
+                            $('#vcand4').val(evcand4)
+                            $('#rnamecand4').text(evcand4)
+                        })
+                    })
+                } else if (count == 5) {
+                    $('#tr5').show()
+                    $('#cand5').val(candname)
+                    $('#vcand5').val(candname)
+                    var len5 = $('#vcand5').val()
+                    if (len5.length > 0) {
+                        $('#trv5').show()
+                    }
+                    $('#rnamecand5').text(candname)
+                    $('#edit5').click(function() {
+                        $('#edit5').hide()
+                        $('#update5').show()
+                        $('#cand5').hide()
+                        $('#evcand5').show()
+                        $('#update5').click(function() {
+                            $('#edit5').show()
+                            $('#update5').hide()
+                            var evcand5 = $('#evcand5').val()
+                            $('#vcand5').val(evcand5)
+                            $('#rnamecand5').text(evcand5)
+                        })
+                    })
+                } else if (count == 6) {
+                    $('#tr6').show()
+                    $('#cand6').val(candname)
+                    $('#vcand6').val(candname)
+                    var len4 = $('#vcand4').val()
+                    if (len4.length > 0) {
+                        $('#trv6').show()
+                    }
+                    $('#rnamecand6').text(candname)
+                    $('#edit6').click(function() {
+                        $('#edit6').hide()
+                        $('#update6').show()
+                        $('#cand6').hide()
+                        $('#evcand6').show()
+                        $('#update6').click(function() {
+                            $('#edit6').show()
+                            $('#update6').hide()
+                            var evcand6 = $('#evcand6').val()
+                            $('#vcand6').val(evcand6)
+                            $('#rnamecand6').text(evcand6)
+                        })
+                    })
+                } else if (count == 7) {
+                    $('#tr7').show()
+                    $('#cand7').val(candname)
+                    $('#vcand7').val(candname)
+                    var len7 = $('#vcand7').val()
+                    if (len7.length > 0) {
+                        $('#trv7').show()
+                    }
+                    $('#rnamecand7').text(candname)
+                    $('#edit7').click(function() {
+                        $('#edit7').hide()
+                        $('#update7').show()
+                        $('#cand7').hide()
+                        $('#evcand7').show()
+                        $('#update7').click(function() {
+                            $('#edit7').show()
+                            $('#update7').hide()
+                            var evcand7 = $('#evcand7').val()
+                            $('#vcand7').val(evcand7)
+                            $('#rnamecand7').text(evcand7)
+                        })
+                    })
+                } else if (count == 8) {
+                    $('#tr8').show()
+                    $('#cand8').val(candname)
+                    $('#vcand8').val(candname)
+                    var len8 = $('#vcand8').val()
+                    if (len8.length > 0) {
+                        $('#trv8').show()
+                    }
+                    $('#rnamecand8').text(candname)
+                    $('#edit8').click(function() {
+                        $('#edit8').hide()
+                        $('#update8').show()
+                        $('#cand8').hide()
+                        $('#evcand8').show()
+                        $('#update8').click(function() {
+                            $('#edit8').show()
+                            $('#update8').hide()
+                            var evcand8 = $('#evcand8').val()
+                            $('#vcand8').val(evcand8)
+                            $('#rnamecand8').text(evcand8)
+                        })
+                    })
+                } else if (count == 9) {
+                    $('#tr9').show()
+                    $('#cand9').val(candname)
+                    $('#vcand9').val(candname)
+                    var len9 = $('#vcand9').val()
+                    if (len9.length > 0) {
+                        $('#trv9').show()
+                    }
+                    $('#rnamecand9').text(candname)
+                    $('#edit9').click(function() {
+                        $('#edit9').hide()
+                        $('#update9').show()
+                        $('#cand9').hide()
+                        $('#evcand9').show()
+                        $('#update9').click(function() {
+                            $('#edit9').show()
+                            $('#update9').hide()
+                            var evcand9 = $('#evcand9').val()
+                            $('#vcand9').val(evcand9)
+                            $('#rnamecand9').text(evcand9)
+                        })
+                    })
+                } else if (count == 10) {
+                    $('#tr10').show()
+                    $('#cand10').val(candname)
+                    $('#vcand10').val(candname)
+                    var len10 = $('#vcand10').val()
+                    if (len10.length > 0) {
+                        $('#trv10').show()
+                    }
+                    $('#rnamecand10').text(candname)
+                    $('#edit10').click(function() {
+                        $('#edit10').hide()
+                        $('#update10').show()
+                        $('#cand10').hide()
+                        $('#evcand10').show()
+                        $('#update10').click(function() {
+                            $('#edit10').show()
+                            $('#update10').hide()
+                            var evcand10 = $('#evcand10').val()
+                            $('#vcand10').val(evcand10)
+                            $('#rnamecand10').text(evcand10)
+                        })
+                    })
+                }
+                $('#candname').val('')
+                $('#delcand1').click(function() {
+                    $('#tr1').hide()
+                    $('#trv1').hide()
+                    $('#resulttr1').hide()
+                })
+                $('#delcand2').click(function() {
+                    $('#tr2').hide()
+                    $('#trv2').hide()
+                    $('#resulttr2').hide()
+                })
+                $('#delcand3').click(function() {
+                    $('#tr3').hide()
+                    $('#trv3').hide()
+                    $('#resulttr3').hide()
+                })
+                $('#delcand4').click(function() {
+                    $('#tr4').hide()
+                    $('#trv4').hide()
+                    $('#resulttr4').hide()
+                })
+                $('#delcand5').click(function() {
+                    $('#tr5').hide()
+                    $('#trv5').hide()
+                    $('#resulttr5').hide()
+                })
+                $('#delcand6').click(function() {
+                    $('#tr6').hide()
+                    $('#trv6').hide()
+                    $('#resulttr6').hide()
+                })
+                $('#delcand7').click(function() {
+                    $('#tr7').hide()
+                    $('#trv7').hide()
+                    $('#resulttr7').hide()
+                })
+                $('#delcand8').click(function() {
+                    $('#tr8').hide()
+                    $('#trv8').hide()
+                    $('#resulttr8').hide()
+                })
+                $('#delcand9').click(function() {
+                    $('#tr9').hide()
+                    $('#trv9').hide()
+                    $('#resulttr9').hide()
+                })
+                $('#delcand10').click(function() {
+                    $('#tr10').hide()
+                    $('#trv10').hide()
+                    $('#resulttr10').hide()
+                })
+            })
+            $('#votecand1').click(function() {
+                votecand1++
+                console.log("v1", votecand1)
+
+
+
+                $('#rvotecand1').text(votecand1)
+            })
+            $('#votecand2').click(function() {
+                votecand2++
+                console.log("v2", votecand2)
+                $('#rvotecand2').text(votecand2)
+            })
+            $('#votecand3').click(function() {
+                votecand3++
+                console.log("v3", votecand3)
+                $('#rvotecand3').text(votecand3)
+            })
+            $('#votecand4').click(function() {
+                votecand4++
+                console.log("v4", votecand4)
+                $('#rvotecand4').text(votecand4)
+            })
+            $('#votecand5').click(function() {
+                votecand5++
+                console.log("v5", votecand5)
+                $('#rvotecand5').text(votecand5)
+            })
+            $('#votecand6').click(function() {
+                votecand6++
+                console.log("v6", votecand6)
+                $('#rvotecand6').text(votecand6)
+            })
+            $('#votecand7').click(function() {
+                votecand7++
+                console.log("v7", votecand7)
+                $('#rvotecand7').text(votecand7)
+            })
+            $('#votecand8').click(function() {
+                votecand8++
+                console.log("v8", votecand8)
+                $('#rvotecand8').text(votecand8)
+            })
+            $('#votecand9').click(function() {
+                votecand9++
+                console.log("v9", votecand9)
+                $('#rvotecand9').text(votecand9)
+            })
+            $('#votecand10').click(function() {
+                votecand10++
+                console.log("v10", votecand10)
+                $('#rvotecand10').text(votecand10)
+            })
+            $('#vresult').click(function() {
+                $('#winner-div').show()
+                $('#vrtable').show()
+                $('#vresult').hide()
+                $('#tvdiv').hide()
+                var winname1 = $('#rnamecand1').text()
+                var winname2 = $('#rnamecand2').text()
+                var winname3 = $('#rnamecand3').text()
+                var winname4 = $('#rnamecand4').text()
+                var winname5 = $('#rnamecand5').text()
+                var winname6 = $('#rnamecand6').text()
+                var winname7 = $('#rnamecand7').text()
+                var winname8 = $('#rnamecand8').text()
+                var winname9 = $('#rnamecand9').text()
+                var winname10 = $('#rnamecand10').text()
+                var maxvote = Math.max(votecand1, votecand2, votecand3, votecand4, votecand5, votecand6, votecand7, votecand8, votecand9, votecand10)
+                console.log(maxvote)
+                if (votecand1 > votecand2 && votecand1 > votecand3 && votecand1 > votecand4 && votecand1 > votecand5 && votecand1 > votecand6 && votecand1 > votecand7 && votecand1 > votecand8 && votecand1 > votecand9 && votecand1 > votecand10) {
+                    console.log("winnr1", winname1)
+                    $('#wnm').text(winname1)
+                    $('#wvote').text(maxvote)
+                }
+                if (votecand2 > votecand1 && votecand2 > votecand3 && votecand2 > votecand4 && votecand2 > votecand5 && votecand2 > votecand6 && votecand2 > votecand7 && votecand2 > votecand8 && votecand2 > votecand9 && votecand2 > votecand10) {
+                    console.log(winname2, winname2)
+                    $('#wnm').text(winname2)
+                    $('#wvote').text(maxvote)
+                }
+                if (votecand3 > votecand1 && votecand3 > votecand2 && votecand3 > votecand4 && votecand3 > votecand5 && votecand3 > votecand6 && votecand3 > votecand7 && votecand3 > votecand8 && votecand3 > votecand9 && votecand3 > votecand10) {
+                    console.log(winname3, winname3)
+                    $('#wnm').text(winname3)
+                    $('#wvote').text(maxvote)
+                }
+                if (votecand4 > votecand1 && votecand4 > votecand3 && votecand4 > votecand2 && votecand4 > votecand5 && votecand4 > votecand6 && votecand4 > votecand7 && votecand4 > votecand8 && votecand4 > votecand9 && votecand4 > votecand10) {
+                    console.log(winname4, winname4)
+                    $('#wnm').text(winname4)
+                    $('#wvote').text(maxvote)
+                }
+                if (votecand5 > votecand1 && votecand5 > votecand3 && votecand5 > votecand4 && votecand5 > votecand2 && votecand5 > votecand6 && votecand5 > votecand7 && votecand5 > votecand8 && votecand5 > votecand9 && votecand5 > votecand10) {
+                    console.log(winname5, winname5)
+                    $('#wnm').text(winname5)
+                    $('#wvote').text(maxvote)
+                }
+                if (votecand6 > votecand1 && votecand6 > votecand3 && votecand6 > votecand4 && votecand6 > votecand5 && votecand6 > votecand2 && votecand6 > votecand7 && votecand6 > votecand8 && votecand6 > votecand9 && votecand6 > votecand10) {
+                    console.log(winname6, winname6)
+                    $('#wnm').text(winname6)
+                    $('#wvote').text(maxvote)
+                }
+                if (votecand7 > votecand1 && votecand7 > votecand3 && votecand7 > votecand4 && votecand7 > votecand5 && votecand7 > votecand6 && votecand7 > votecand2 && votecand7 > votecand8 && votecand7 > votecand9 && votecand7 > votecand10) {
+                    console.log(winname7, winname7)
+                    $('#wnm').text(winname7)
+                    $('#wvote').text(maxvote)
+                }
+                if (votecand8 > votecand1 && votecand8 > votecand3 && votecand8 > votecand4 && votecand8 > votecand5 && votecand8 > votecand6 && votecand8 > votecand7 && votecand8 > votecand2 && votecand8 > votecand9 && votecand8 > votecand10) {
+                    console.log(winname8, winname8)
+                    $('#wnm').text(winname8)
+                    $('#wvote').text(maxvote)
+                }
+                if (votecand9 > votecand1 && votecand9 > votecand3 && votecand9 > votecand4 && votecand9 > votecand5 && votecand9 > votecand6 && votecand9 > votecand7 && votecand9 > votecand8 && votecand9 > votecand2 && votecand9 > votecand10) {
+                    console.log(winname9, winname9)
+                    $('#wnm').text(winname9)
+                    $('#wvote').text(maxvote)
+                }
+                if (votecand10 > votecand1 && votecand10 > votecand3 && votecand10 > votecand4 && votecand10 > votecand5 && votecand10 > votecand6 && votecand10 > votecand7 && votecand10 > votecand8 && votecand10 > votecand9 && votecand10 > votecand2) {
+                    console.log(winname10, winname10)
+                    $('#wnm').text(winname10)
+                    $('#wvote').text(maxvote)
+                }
+
+
+
+            })
+
+        })
+    </script>
+</body>
+
+</html>
